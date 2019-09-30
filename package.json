@@ -1,0 +1,22 @@
+{
+  "name": "cli_findfolders",
+  "version": "0.1.0",
+  "description": "命令行工具-查找系统下某一类型文件夹所在的目录，及其中包含的部分内容[查找所有的git项目，且显示远程地址和当前分支]",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yumu",
+  "license": "ISC",
+  "bin": {
+    "yumuddemo": "./bin/cli.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chalk": "^2.4.2", 
+    "commander": "^3.0.2",
+    "fs": "0.0.1-security",
+    "fs-extra": "^8.1.0",
+    "standard": "^14.3.1"
+  }
+}
