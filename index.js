@@ -1,7 +1,7 @@
 // #!/user/bin/env node
 let  fs = require('fs');
 let  join = require('path').join;
-let Path='F:\\test'
+let Path='F:\\'
 const zgit=new RegExp(/\.git$/i) //包含.git的所有路径
 let zresult=new RegExp(/.*?(?=\\\.git)/)
 let fileNames=findSync(Path)   //存.git文件夹下的文件路径
