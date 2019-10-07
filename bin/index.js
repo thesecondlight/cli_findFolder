@@ -1,4 +1,4 @@
-// #!/user/bin/env node
+#!/user/bin/env node
 let  fs = require('fs');
 let  join = require('path').join;
 let Path='F:\\'
