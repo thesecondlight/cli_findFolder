@@ -1,5 +1,5 @@
 #!/user/bin/env node
-//范围很小
+//改异步没改好，改好的是temp.js
 const fs = require('fs')
 // const ppath = require('path')
 const join = require('path').join
@@ -15,12 +15,13 @@ function findSync (startPath) { // 某路径下全部文件
       const fPath = join(path, val)
       let stats
       if (fPath) {
-          stats = fs.statSync(fPath)
-      if (stats.isDirectory()) finder(fPath)
-      if (stats.isFile() && path.match(zgit)) {
-        console.log(result)
-        result.push(fPath)
-      } // 包含git的
+         fs.stat(fPath,function(err,stat){
+            if (stat.isDirectory()) finder(fPath)
+            if (stat.isFile() && path.match(zgit)) {
+              console.log(result)
+              result.push(fPath)
+            } // 包含git的
+          })
     }
     })
   }
