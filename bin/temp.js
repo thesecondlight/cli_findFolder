@@ -7,7 +7,7 @@ const head=new RegExp(/head$/i)
 const zresult = new RegExp(/.*?(?=\\\.git)/)
 let url=[]
 let branch=[]
-let cnt=0
+let cnt=1
 let allpath=new RegExp(/^[A-Za-z]+$/)
 function findSync(startPath) { //某路径下全部文件
     var result=[]
