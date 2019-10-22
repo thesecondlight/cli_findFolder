@@ -45,8 +45,14 @@ function findSync(startPath) { //某路径下全部文件
     hh(startPath, result)
     //return result
 }
-let startPath = path.resolve("D://")
-let fileNames = findSync(startPath)
+let startPath
+for(let i=65;i<=90;i++){
+    let a=String.fromCharCode(i)
+    startPath = path.resolve(a+':/')
+    //console.log(startPath)
+    let fileNames = findSync(startPath)
+}
+
 let count_all = 0
 // console.log(fileNames)//存.git文件夹下的文件路径
 let zzr = []
