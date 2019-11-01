@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Launch Chrome against localhost",
      
-            "program": "${workspaceFolder}\\index.js"
+            "program": "${workspaceFolder}\\bin\\tempa.js"
         }
     ]
 }
